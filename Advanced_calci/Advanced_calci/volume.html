@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="volume.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container" id="mainsection">
+        <div class="navbar">
+
+            <div class="logo">
+                <div>
+                    <a href="#">
+                        <!-- <img src="#" alt="logo" id="img-logo"> -->
+                        <a href="index.html" class="text">&nbsp;&nbsp; Home</a>
+                    </a>
+                </div>
+                <div class="text-logo">Calculator</div>
+            </div>
+
+            <nav>
+                <ul id="menuList">
+                    <!-- <li class="links_ul_li"> -->
+                    <li><a href="simple.html">Simple</a></li>
+                    <li><a href="scientific.html">Scientific</a></li>
+                    <li><a href="temparature.html">Temparature</a></li>
+                    <li><a href="pc.html">Percentage</a></li>
+                    <li><a href="electricbill.html">Electricbill</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+
+                    <li class="blck"><a href="age.html">Age</a></li>
+                    <li class="blck"><a href="area.html">Area</a></li>
+                    <li class="blck"><a href="volume.html">Volume</a></li>
+                    <li class="blck"><a href="sic.html">Simple Interest Calci</a></li>
+                    <li class="blck"><a href="cic.html">Compound Interest Calci</a></li>
+                    <!-- <li><a href="#">Time</a></li> -->
+                    <li>
+                        <a href="#" class="more">More <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="age.html">Age</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="sic.html">Simple Interest Calci</a></li>
+                            <li><a href="cic.html">Compound Interest Calci</a></li>
+
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </nav>
+            
+            <img src="\C:\Users\Akhil_Kumar_Reddy\Desktop\resposive_design\menuimage2.jpg" class="menuicon images" onclick="togglemenu()">
+        </div>
+    </div>
+
+
+
+
+    <!-- Volume Calculator -->
+        <h1 class="Mainheading">Volume Calculator</h1>
+        <p class="mainlabel">
+        <label for = "Shape" style="color:#e0e70f ;">Select Shape: </label>
+        <select name = "Shape" onclick = showDiv(this) class="mainselector">
+            <option value = "sopt">Select one</option>
+            <option value = "Sphere">Sphere</option>
+            <option value = "Cube">Cube</option>
+            <option value = "Cone">Cone</option>
+            <option value = "Cylinder">Cylinder</option>
+            <option value = "Ellipsoid">Ellipsoid</option>
+        </select></p>
+
+        <div id = "sopt" class = "shape" style = "display: block;">
+            <p id="sopt1" style="margin-left: 30%;color: white;"> Select Option</p>
+        </div>
+
+    <div id = "Sphere" class = "shape">
+        <p>V = (4/3)  &pi; 
+        <input id = "sphere-radius" type = "text" placeholder = "radius" class="takinginput"> <sup> 3 </sup></p>
+        <p id="sphereAnswer" class = "answer"></p>
+        <button onclick = calculate() class="btn">Calculate</button>
+    </div>
+
+    <div id = "Cone" class = "shape">
+        <p>V = (1/3)  &pi;  
+        <input id = "cone-radius" type = "text" placeholder = "radius" class="takinginput"> <sup> 2 </sup>
+        <input id = "cone-height" type = "text" placeholder = "height" class="takinginput">
+        </p>
+        <p id="coneAnswer" class = "answer"></p>
+        <button onclick = calculate() class="btn">Calculate</button>
+    </div>
+
+    <div id = "Cube" class = "shape">
+        <p>V = 
+        <input id = "cube-length" type = "text" placeholder = "length" class="takinginput"> <sup> 3  </sup>   </p>
+        <p id="cubeAnswer" class = "answer"></p>
+        <button onclick = calculate() class="btn">Calculate</button>
+    </div>
+
+    <div id = "Cylinder" class = "shape">
+        <p>V = &pi;
+        <input id = "cylinder-radius" type = "text" placeholder = "radius" class="takinginput"> <sup> 2 </sup>
+        <input id = "cylinder-height" type = "text" placeholder = "height" class="takinginput"></p>
+        <p id="cylinderAnswer" class = "answer"></p>
+        <button onclick = calculate() class="btn">Calculate</button>
+    </div>
+
+    <div id = "Ellipsoid" class = "shape">
+        <p>V = (4/3) &pi;
+        <input id = "axis-a" type = "text" placeholder = "axis" class="takinginput">
+        <input id = "axis-b" type = "text" placeholder = "axis" class="takinginput"> 
+        <input id = "axis-c" type = "text" placeholder = "axis" class="takinginput"> </p>
+        <p id="ellipsoidAnswer" class = "answer"></p>
+        <button onclick = "calculate()" class="btn">Calculate</button>
+    </div>
+
+
+
+
+
+    <script src="volume.js"></script>
+</body>
+</html>

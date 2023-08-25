@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Age Calculator | Calculator</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container" id="mainsection">
+        <div class="navbar">
+
+            <div class="logo">
+                <div>
+                    <a href="#">
+                        <!-- <img src="#" alt="logo" id="img-logo"> -->
+                        <a href="index.html" class="text">&nbsp;&nbsp; Home</a>
+                    </a>
+                </div>
+                <div class="text-logo">Calculator</div>
+            </div>
+
+            <nav>
+                <ul id="menuList">
+                    <!-- <li class="links_ul_li"> -->
+                    <li><a href="simple.html">Simple</a></li>
+                    <li><a href="scientific.html">Scientific</a></li>
+                    <li><a href="temparature.html">Temparature</a></li>
+                    <li><a href="pc.html">Percentage</a></li>
+                    <li><a href="electricbill.html">Electricbill</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+
+                    <li class="blck"><a href="age.html">Age</a></li>
+                    <li class="blck"><a href="area.html">Area</a></li>
+                    <li class="blck"><a href="volume.html">Volume</a></li>
+                    <li class="blck"><a href="sic.html">Simple Interest Calci</a></li>
+                    <li class="blck"><a href="cic.html">Compound Interest Calci</a></li>
+                    <!-- <li><a href="#">Time</a></li> -->
+                    <li>
+                        <a href="#" class="more">More <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="age.html">Age</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="sic.html">Simple Interest Calci</a></li>
+                            <li><a href="cic.html">Compound Interest Calci</a></li>
+
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </nav>
+            
+            <img src="menuimage2.jpg" class="menuicon images" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="heading">Age Calculator </div>
+    <div class="container2">
+        
+        <form>
+            <div class="base">
+                <div class="enter"><h4>Calculator your age</h4></div>
+                <div class="block">
+                    <p class="title">Date&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <input type="text" name="date" id="date" placeholder="date" required="required" minlength="1" maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Month&nbsp;&nbsp;</p>
+                    <input type="text" name="month" id="month" placeholder="month" required="required" minlength="1" maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Year&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <input type="text" name="year" id="year" placeholder="year" required="required" minlength="1" maxlength="4" />
+                </div>
+                <p id="age"></p>
+                <div class="base2">
+                    <input class="button2" value="Calculate" onclick="age()">
+        
+                </div>
+            </div>
+            
+            
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="age.js"></script>
+    </body>
+    </html>

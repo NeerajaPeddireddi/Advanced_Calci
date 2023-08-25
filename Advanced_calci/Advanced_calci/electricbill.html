@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ElectricBill Calculator | Calculator</title>
+    <link rel="stylesheet" href="electricbill.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container" id="mainsection">
+        <div class="navbar">
+
+            <div class="logo">
+                <div>
+                    <a href="#">
+                        <!-- <img src="#" alt="logo" id="img-logo"> -->
+                        <a href="index.html" class="text">&nbsp;&nbsp; Home</a>
+                    </a>
+                </div>
+                <div class="text-logo">Calculator</div>
+            </div>
+
+            <nav>
+                <ul id="menuList">
+                    <!-- <li class="links_ul_li"> -->
+                    <li><a href="simple.html">Simple</a></li>
+                    <li><a href="scientific.html">Scientific</a></li>
+                    <li><a href="temparature.html">Temparature</a></li>
+                    <li><a href="pc.html">Percentage</a></li>
+                    <li><a href="electricbill.html">Electricbill</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+
+                    <li class="blck"><a href="age.html">Age</a></li>
+                    <li class="blck"><a href="area.html">Area</a></li>
+                    <li class="blck"><a href="volume.html">Volume</a></li>
+                    <li class="blck"><a href="sic.html">Simple Interest Calci</a></li>
+                    <li class="blck"><a href="cic.html">Compound Interest Calci</a></li>
+                    <!-- <li><a href="#">Time</a></li> -->
+                    <li>
+                        <a href="#" class="more">More <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="age.html">Age</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="sic.html">Simple Interest Calci</a></li>
+                            <li><a href="cic.html">Compound Interest Calci</a></li>
+
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </nav>
+            
+            <img src="menuimage2.jpg" class="menuicon images" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <!-- ElectricBill Calculator -->
+    <div class="Electri-Bill-Calculator">
+        <div class="heading">ElectricBill Calculator</div>
+
+        <div class="calci">
+            <h2 style="color: white;">Calculate ElectricBill</h2>
+            <p style="color: yellow; margin-left: 5%;" >Choose Your field:
+
+            <select id="list" onchange="selectvalue();" class="text2">
+                <option value="notselected">Select one</option>
+                <option value="HOUSE">House/Domestic</option>
+                <option value="LT">LT Commercial</option>
+            </select></p>
+
+            <p class="text" style="color: white;">Consuption/Units:</p>
+            <input type="text" id="first" placeholder="Enter Units">&nbsp;&nbsp;kwh
+            <p class="text" style="color: white;">Demanded Load:</p>
+            <input type="text" id="second" placeholder="Enter Load">&nbsp;&nbsp;kw
+            <p class="text" style="color: white;">Total Months:</p>
+            <input type="number" id="third" min="1" placeholder="Enter Months">&nbsp;&nbsp;
+
+            <p id="result1" style="color:yellow; font-size: 20px;"></p>
+            
+            <button id="btn" onclick="EBC()">Calculate</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="electricbill.js"></script>
+</body>
+</html>

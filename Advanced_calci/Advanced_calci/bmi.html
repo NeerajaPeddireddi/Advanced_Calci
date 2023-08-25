@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BMI Calculator | Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container" id="mainsection">
+        <div class="navbar">
+
+            <div class="logo">
+                <div>
+                    <a href="#">
+                        <!-- <img src="#" alt="logo" id="img-logo"> -->
+                        <a href="index.html" class="text">&nbsp;&nbsp; Home</a>
+                    </a>
+                </div>
+                <div class="text-logo">Calculator</div>
+            </div>
+
+            <nav>
+                <ul id="menuList">
+                    <!-- <li class="links_ul_li"> -->
+                    <li><a href="simple.html">Simple</a></li>
+                    <li><a href="scientific.html">Scientific</a></li>
+                    <li><a href="temparature.html">Temparature</a></li>
+                    <li><a href="pc.html">Percentage</a></li>
+                    <li><a href="electricbill.html">Electricbill</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+
+                    <li class="blck"><a href="age.html">Age</a></li>
+                    <li class="blck"><a href="area.html">Area</a></li>
+                    <li class="blck"><a href="volume.html">Volume</a></li>
+                    <li class="blck"><a href="sic.html">Simple Interest Calci</a></li>
+                    <li class="blck"><a href="cic.html">Compound Interest Calci</a></li>
+                    <!-- <li><a href="#">Time</a></li> -->
+                    <li>
+                        <a href="#" class="more">More <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="age.html">Age</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="sic.html">Simple Interest Calci</a></li>
+                            <li><a href="cic.html">Compound Interest Calci</a></li>
+
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </nav>
+            
+            <img src="menuimage2.jpg" class="menuicon images" onclick="togglemenu()">
+        </div>
+    </div>
+
+
+
+    <!-- BMI Calculator -->
+    <div class="bmi-calci-container">
+        <div class="heading">BMI Calculator</div>
+
+        <div class="calci">
+            <h2 style="color: white;">Calculate your BMI</h2>
+            <p class="text" style="color: white;">Height</p>
+            <input type="number" id="h" min="1" placeholder="height">cm
+            <p class="text" style="color: white;">Weight</p>
+            <input type="number" id="w" min="1" placeholder="weight">kg
+            <p id="result"></p>
+            <button id="btn" onclick="BMI()">Calculate</button>
+            <p id="info">Please enter height [cm] and weight [kg]  </p>
+        </div>
+    </div>
+
+
+
+    <script src="bmi.js"></script>
+</body>
+</html>

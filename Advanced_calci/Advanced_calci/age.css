@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto";
+}
+body{
+  
+    background-image: url("mainbg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-attachment: fixed; */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #F1F6F5;
+}
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: none;
+}
+.text-logo{
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+nav{
+    
+    margin-top:-19px ; 
+    margin-right: 40px;
+    flex:1;
+    text-align: center;
+} 
+nav ul li{
+    padding-left: 12px;
+    padding-right: 12px;
+    list-style: none;
+    display:inline-block;
+    position: relative;
+    margin-right: 30px;
+    
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #F1F6F5;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+
+ul li ul.dropdown ul{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    right: 98px;
+    
+    display: none;
+}
+
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+ul li ul li{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width:238px;
+    background-color: rgba(30, 18, 128, 0.843);
+}
+.blck{
+    display: none;
+}
+ul li ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul li ul li a:hover{
+    font-weight: 800;
+}
+.menuicon{
+    cursor: pointer;
+    display: none;
+    width:50px;
+    height: 50px;
+   
+}
+
+
+
+
+   * {
+       box-sizing: border-box;
+   }
+   .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.0rem;
+        font-size: 2.7rem;
+        font-weight: 600;
+        padding-top: 15px;
+        color:#F1F6F5 ;
+    }
+   .container2{
+        width: 500px;
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        background-color: rgba(36, 36, 94, 0.928);
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 30px 10px rgba(153, 153, 153, 1);
+   }
+   .base {
+       width: 100%;
+       margin: 0;
+       overflow: hidden;
+       display: block;
+       float: none;
+   } 
+   .block {
+       width: 130px;
+       padding: 5px 20px;
+       margin-left: 15px;
+   }
+   .base h4 {
+       font-size: 30px;
+       text-align: center;
+       font-family: sans-serif;
+       font-weight: normal;
+       margin-top: 2px;
+       color: white;
+   }
+   .title {
+       font-size: 20px;
+       text-align: left;
+       font-family: sans-serif;
+       font-weight: normal;
+       line-height: 0.5;
+       letter-spacing: 0.5px;
+       word-spacing: 2.7px;
+       color: white;
+   }
+   input[type="text"] {
+       width: 140px;
+       margin: auto;
+       outline: none;
+       min-height: 50px;
+       border: 1px solid #1073d0;
+       padding: 12px;
+       background-color: #f7f7f7;
+       border-radius: 2px;
+       
+       font-size: 17px;
+       border-radius: 15px;
+   }
+   input[type="text"]:focus {
+       background-color: #ffffff;
+       border: 1px;
+       border-radius: 15px;
+       border: 3px solid #1073d0;
+       outline: none;
+   }
+   
+   
+   #age {
+        margin-top: -5px;
+       display: block;
+       padding: 10px;
+       padding-bottom: 20px;
+       overflow: hidden;
+       font-family: verdana;
+       font-size: 18px;
+       font-weight: normal;
+       line-height: 1.5;
+       color: yellow;
+   }
+
+   .button2{
+    margin-top: -20px;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        width: 30%;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 15px;
+        margin-left: 10rem;
+        /* margin-top: 3rem; */
+    }
+    .button2:hover{
+        box-shadow: 1px 1px 10px white;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           /* -----Resposive------ */
+
+@media only screen and (max-width:1270px){
+    nav{
+        text-align: center; 
+            
+    }   
+    nav ul{
+        width: 100%;
+        /* background: linear-gradient(black,blue); */
+        background: linear-gradient(rgb(79, 79, 206),black);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        /* background: transparent; */
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+        font-family: "Roboto";
+    }
+    nav ul li a:hover{
+        color:white;
+        font-weight: 800;
+    }
+    .menuicon{
+        margin-top: -1px;
+        margin-right: 30px;
+        display: block;
+    
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .more{
+        display: none;
+    }
+    .blck{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .container2{
+        width: 350px;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+    }
+    .block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 130px;
+        padding: 5px 20px;
+        padding-left: 120px;
+        margin-left: 80px;
+        margin: 25px;
+        
+    }
+    .button2{
+       margin-left: 7.5rem;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    #age{
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (min-width:601px){
+    .block {
+        display: inline-block;
+    }
+    #age {
+       
+        margin-left: 2.3rem;
+    }
+    
+}

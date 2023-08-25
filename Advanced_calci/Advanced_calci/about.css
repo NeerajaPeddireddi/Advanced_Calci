@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family:"Sans-serif";
+}
+
+body{
+    background-color: navajowhite; 
+    /* background-color: rgb(33, 27, 27); */
+
+}
+.arrow{
+    margin-left: 15px;
+    font-size: 35px;
+    float: left;
+    text-decoration: none;
+}
+.heading1{
+    margin-left:  40%;
+    font-family: serif;
+    color: blue;
+}
+
+
+
+.person{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    /* background: linear-gradient(rgb(207, 83, 0),rgb(34, 30, 30)); */
+    /* background-color: rgb(108, 22, 22); */
+    background-image:url("backimg.jpg");
+    background-size: 350px;
+    background-repeat: no-repeat;
+    
+    margin: 25px;
+    width: 320px;
+}
+.detailes{
+    border-radius: 10px;
+    
+    /* background-color: black; */
+    color: white;
+    width: 270px;
+    margin-left: 2px;
+    padding-left: 25px;
+}
+.image2{
+    border-radius: 50%;
+}
+
+.name{
+    color:#FE982C;
+    padding-left: 40px;
+    padding-top: -20px;
+    font-size: 22px;
+}
+.name2{
+    color:#FE982C;
+    padding-left: 17px;
+    padding-top: -20px;
+    font-size: 22px;
+}
+.rolec{
+    padding-left: 60px;
+    font-size: 17px;
+}
+.roled{
+    padding-left: 16px;
+    font-size: 17px;
+}
+.roledid{
+    padding-left: 50px;
+}
+
+.mail{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+.meghana{
+    margin-top: 30px;
+    margin-left: 7px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 130px;
+    height: 115px;
+}
+.karuna{
+    margin-top: 30px;
+    margin-left: 7px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 130px;
+    height: 115px;
+}
+.navya{
+    margin-top: 15px;
+    margin-left: 4px;
+    padding-top: 5px;
+    width: 150px;
+    height: 130px;
+}
+.chithra{
+    margin-top: 30px;
+    margin-left: 7px;
+    padding-left: 2px;
+    padding-top: 5px;
+    width: 130px;
+    height: 115px;
+}
+.akhil{
+    margin-top: 30px;
+    margin-left: 7px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 130px;
+    height: 115px;
+}
+.privacy{
+    font-size:20px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+.contact{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.c1{
+    margin-left: 100px;
+}
+.copyrights{
+    font-size: 17px;
+    margin-right: 6%;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 19px;
+}
+
+@media only screen and (min-width:701px){
+    .row2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .row1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .downsection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width:1000px){
+    .person{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 1.2rem;
+        margin-left: 2rem;
+    }
+    .c1{
+        float: left;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .copyrights{
+        float: right;
+    }
+    .heading1{
+        margin-left:  20%;
+    }
+}
+
+

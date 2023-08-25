@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto";
+}
+body{
+    background-image: url("mainbg2.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #F1F6F5;
+}
+.text{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.text-logo{
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 22px;
+    
+}
+
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* background: linear-gradient(rgb(57, 122, 149),rgb(62, 171, 198)); */
+}
+.navbar{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+nav{
+    
+    margin-top:-19px ; 
+    margin-right: 40px;
+    flex:1;
+    text-align: center;
+} 
+nav ul li{
+    padding-left: 12px;
+    padding-right: 12px;
+    list-style: none;
+    display:inline-block;
+    position: relative;
+    margin-right: 30px;
+    
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #F1F6F5;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+
+ul li ul.dropdown ul{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    right: 98px;
+    
+    display: none;
+}
+
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+ul li ul li{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width:238px;
+    background-color: rgba(30, 18, 128, 0.843);
+    
+}
+ul li ul li a{
+    color: white;
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+.blck{
+    display: none;
+}
+
+.menuicon{
+    cursor: pointer;
+    display: none;
+    width:50px;
+    height: 50px;
+   
+}
+
+
+
+
+/* Volume Calci */
+
+
+
+
+.shape{
+    display: none;
+    background-color: rgba(36, 36, 94, 0.928);
+    color: white;
+    box-shadow: 0 0 30px 10px rgba(153, 153, 153, 1);
+    width: 420px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    padding-left: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+}
+
+.takinginput{
+    width: 23%;
+    text-align: center;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-bottom: 5%;
+    border: 1px solid #ffffff;
+    outline: none;
+    font-size: 20px;
+}
+
+.takinginput[type=text]:focus, .takinginput:hover {
+    border: 2px solid #ffffff;
+}
+
+.btn{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-left: 8rem;
+}
+
+
+.mainlabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Mainheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.2rem;
+    font-size: 2.7rem;
+    font-weight: 600;
+    color:#F1F6F5 ;
+}
+.mainselector{
+    margin-left: 10px;
+    width: 100px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255); 
+    border: 1; 
+    font-size: 17px;
+}
+
+.mainselector:hover {
+    cursor:pointer;
+}
+
+.mainselector option {
+    background-color: white;
+}
+
+.answer{
+    color: yellow;
+}
+
+
+
+
+
+
+/*            --Responsive--                */
+
+@media only screen and (max-width:1260px){
+    nav{
+        text-align: center; 
+            
+    }   
+    nav ul{
+        width: 100%;
+        /* background: linear-gradient(black,blue); */
+        background: linear-gradient(rgb(79, 79, 206),black);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        /* background: transparent; */
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+        font-family: "Roboto";
+    }
+    nav ul li a:hover{
+        color:white;
+        font-weight: 800;
+    }
+    .menuicon{
+        margin-top: -1px;
+        margin-right: 30px;
+        display: block;
+    
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .more{
+        display: none;
+    }
+    .blck{
+        display: block;
+    }
+    
+    .shape{
+        position: absolute;
+        top: 65%;
+    }
+    
+}
+
+
+
+

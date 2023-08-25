@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto";
+}
+body{
+  
+    background-image: url("mainbg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #F1F6F5;
+}
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: none;
+}
+.text-logo{
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 22px;
+    
+}
+
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* background: linear-gradient(rgb(57, 122, 149),rgb(62, 171, 198)); */
+}
+.navbar{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+nav{
+    
+    margin-top:-19px ; 
+    margin-right: 40px;
+    flex:1;
+    text-align: center;
+} 
+nav ul li{
+    padding-left: 12px;
+    padding-right: 12px;
+    list-style: none;
+    display:inline-block;
+    position: relative;
+    margin-right: 30px;
+    
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #F1F6F5;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+
+ul li ul.dropdown ul{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    right: 98px;
+    
+    display: none;
+}
+
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+ul li ul li{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width:238px;
+    background-color: rgba(30, 18, 128, 0.843);
+}
+ul li ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul li ul li a:hover{
+    font-weight: 800;
+}
+.blck{
+    display: none;
+   
+}
+.menuicon{
+    cursor: pointer;
+    display: none;
+    width:50px;
+    height: 50px;
+   
+}
+
+
+    /* .simple-calci-conatiner */
+    
+
+
+
+
+.calci-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.2rem;
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    color:#F1F6F5 ;
+}
+.c-inner-container{
+    max-width: 300px;
+    border: 2px solid black;
+    margin: 10vh auto 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 0 43px 17px rgb(153, 153, 153); 
+    /* background-color: #f1f6f5; */
+    background-color: rgba(36, 36, 94, 0.928);
+}
+
+#display{
+    border-radius: 15px;
+    background-color: aqua;
+    text-align: right;
+    height: 120px;
+    line-height: 30px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    margin: 15px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 60%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #323330;
+    color: white;
+}
+
+.f-m-s-a{
+    background-color: #ff9800;
+    color: white;
+}
+.bk{
+    background-color: #fe1010;
+    color: white;
+}
+.dot{
+    background-color: #978974;
+    color: white;
+}
+.clear {
+    background-color: #ff6900;
+    color: white;
+}
+#equal{
+    background-color: #5555ff;
+    color: white;
+}
+.gotoup{
+    border: 1px;
+    border-radius: 60%;
+    background-color: rgb(183, 183, 191);
+    float: right;
+    margin-right: 25px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    padding:10px;
+    margin-top: -105px;
+    text-decoration: none;
+}
+.gotoup:hover{
+    background-color: #323330;
+    color: white;
+}
+
+/*            --Responsive--                */
+
+@media only screen and (max-width:1240px){
+    nav{
+        text-align: center; 
+            
+    }   
+    nav ul{
+        width: 100%;
+        /* background: linear-gradient(black,blue); */
+        background: linear-gradient(rgb(79, 79, 206),black);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        /* background: transparent; */
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+        font-family: "Roboto";
+    }
+    nav ul li a:hover{
+        color:white;
+        font-weight: 800;
+    }
+    .menuicon{
+        margin-top: -1px;
+        margin-right: 15px;
+        display: block;
+    
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .more{
+        display: none;
+    }
+    .blck{
+        display: block;
+    }
+    .gotoup{
+        margin-right: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
